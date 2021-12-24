@@ -1,10 +1,3 @@
-/*
- * main.cpp
- *
- *  Created on: Dec 23, 2021
- *      Author: taosu
- */
-
 #include <iostream>
 #include <vector>
 #include "main.h"
