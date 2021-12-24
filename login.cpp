@@ -30,7 +30,7 @@ void login() {
 	string password;
 	cin >> password;
 
-	if (!user->checkPassword(password)) {
+	if (!(user->checkPassword(password))) {
 		cout << "Wrong password." << endl;
 		main();
 		return;

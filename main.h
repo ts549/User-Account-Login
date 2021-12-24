@@ -9,13 +9,14 @@ class User {
 private:
 	std::string username;
 	std::string password;
-	std::string getPassword();
 
 public:
+	std::string getPassword();
 	User(std::string username, std::string password);
 	virtual ~User();
 	std::string getUsername();
 	bool checkPassword(std::string password);
+	void setPassword(std::string password);
 };
 
 extern std::vector<User> users;
@@ -27,3 +28,5 @@ void performAction(int action);
 void registerUser();
 
 void login();
+
+void changePassword();

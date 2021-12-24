@@ -15,6 +15,13 @@ int main() {
 
 	if (!done) main();
 
+	User* deletePtr;
+	for (User user : users) {
+		deletePtr = &user;
+		delete(deletePtr);
+		deletePtr = NULL;
+	}
+
 	return 0;
 }
 
@@ -36,6 +43,7 @@ void performAction(int action) {
 			login();
 			break;
 		case(3):
+			changePassword();
 			break;
 		case(4):
 			break;

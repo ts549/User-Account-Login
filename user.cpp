@@ -20,5 +20,9 @@ string User::getPassword() {
 }
 
 bool User::checkPassword(string password) {
-	return (this->password == this->getPassword());
+	return (password == this->getPassword());
+}
+
+void User::setPassword(string password) {
+	this->password = password;
 }
