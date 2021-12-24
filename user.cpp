@@ -18,3 +18,7 @@ string User::getUsername() {
 string User::getPassword() {
 	return this->password;
 }
+
+bool User::checkPassword(string password) {
+	return (this->password == this->getPassword());
+}

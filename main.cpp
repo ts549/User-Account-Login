@@ -33,6 +33,7 @@ void performAction(int action) {
 			registerUser();
 			break;
 		case(2):
+			login();
 			break;
 		case(3):
 			break;
