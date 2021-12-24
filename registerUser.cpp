@@ -8,10 +8,9 @@ void registerUser() {
 	string username;
 	cin >> username;
 
-	for (int i = 0; i < users.size(); i++) {
-		User user = users.at(i);
+	for (User user : users) {
 		if (user.getUsername() == username) {
-			cout << "Username is taken.";
+			cout << "Username is taken." << endl;
 			registerUser();
 		}
 	}
@@ -31,8 +30,8 @@ void registerUser() {
 		valid = true;
 	}
 
-	User newUser;
+	User * newUser;
 	newUser = new User(username, password);
 
-	users.push_back(newUser);
+	users.push_back(*newUser);
 }
