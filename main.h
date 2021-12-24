@@ -1,10 +1,3 @@
-/*
- * main.h
- *
- *  Created on: Dec 23, 2021
- *      Author: taosu
- */
-
 #ifndef MAIN_H_
 #define MAIN_H_
 #endif /* MAIN_H_ */
