@@ -1,10 +1,3 @@
-/*
- * registerUser.cpp
- *
- *  Created on: Dec 24, 2021
- *      Author: taosu
- */
-
 #include <iostream>
 #include "main.h"
 
