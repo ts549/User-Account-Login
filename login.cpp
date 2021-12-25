@@ -6,6 +6,11 @@ using namespace std;
 
 int main();
 
+/**
+ * Function that checks login credentials.
+ * If valid username and password, send "success" message and return to menu.
+ */
+
 void login() {
 	cout << "Enter username: ";
 	string username;
@@ -21,7 +26,7 @@ void login() {
 	}
 
 	if (!found) {
-		cout << "Username incorrect." << endl;
+		cout << "Username not found." << endl;
 		main();
 		return;
 	}

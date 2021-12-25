@@ -4,14 +4,18 @@
 
 #include <vector>
 
+/**
+ * Header file for User class and function delcarations.
+ */
+
 class User {
 
 private:
 	std::string username;
 	std::string password;
+	std::string getPassword();
 
 public:
-	std::string getPassword();
 	User(std::string username, std::string password);
 	virtual ~User();
 	std::string getUsername();
@@ -30,3 +34,5 @@ void registerUser();
 void login();
 
 void changePassword();
+
+void deleteUser();

@@ -7,6 +7,10 @@ using namespace std;
 bool done = false;
 vector<User> users;
 
+/**
+ * main function that generates saved users.
+ * Frees object memory when terminated.
+ */
 int main() {
 	printOptions();
 	int action;
@@ -25,6 +29,9 @@ int main() {
 	return 0;
 }
 
+/**
+ * Prints the options that user can choose from.
+ */
 void printOptions() {
 	cout << "Choose an option:" << endl
 			<< "1) Register" << endl
@@ -34,6 +41,9 @@ void printOptions() {
 			<< "5) Done" << endl;
 }
 
+/**
+ * Calls functions to perform based on previous input.
+ */
 void performAction(int action) {
 	switch(action) {
 		case(1):
@@ -46,6 +56,7 @@ void performAction(int action) {
 			changePassword();
 			break;
 		case(4):
+			deleteUser();
 			break;
 		case(5):
 			done = true;

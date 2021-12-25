@@ -3,6 +3,10 @@
 
 using namespace std;
 
+/**
+ * Constructors and methods of the User class.
+ * Allows for setting username, password, updating password, and checking password.
+ */
 User::User(string username, string password) {
 	this->username = username;
 	this->password = password;

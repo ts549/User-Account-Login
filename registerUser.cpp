@@ -3,6 +3,10 @@
 
 using namespace std;
 
+/**
+ * Registers a user.
+ * Creates a username and password if password is at least 8 characters.
+ */
 void registerUser() {
 	cout << "Enter a username:" << endl;
 	string username;

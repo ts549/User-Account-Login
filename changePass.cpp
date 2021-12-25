@@ -6,6 +6,10 @@ using namespace std;
 
 int main();
 
+/**
+ * Function that changes the password of a user.
+ * First checks to see if username and password valid.
+ */
 void changePassword() {
 	cout << "Enter username: ";
 	string username;
